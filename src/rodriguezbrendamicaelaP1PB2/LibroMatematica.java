@@ -1,0 +1,12 @@
+package rodriguezbrendamicaelaP1PB2;
+
+public class LibroMatematica extends Libro {
+
+	public LibroMatematica(Integer codigo, String nombre, String autor) {
+		super(codigo, nombre, autor);
+		
+	}
+
+	
+
+}
