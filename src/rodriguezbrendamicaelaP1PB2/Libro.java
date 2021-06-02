@@ -22,5 +22,9 @@ public class Libro {
 		return estaDisponible;
 	}
 
+	public void setEstaDisponible(Boolean estaDisponible) {
+		this.estaDisponible = estaDisponible;
+	}
+
 
 }

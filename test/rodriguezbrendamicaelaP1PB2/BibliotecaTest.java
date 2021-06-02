@@ -29,5 +29,20 @@ public class BibliotecaTest {
 		
 	}
 	
+	@Test
+	public void AlDevolverUnLibroEstaDisponible() {
+		LibroHistoria libroH = new LibroHistoria(123, "sgfdg", "sdf");
+		Alumno alumno1 = new Alumno(123,"sdfd","dfgdf");
+		Prestamo prestamo1 = new Prestamo(123,alumno1,libroH);
+		
+		prestamo1.devolver();
+		
+		Assert.assertEquals(Boolean.TRUE, libroH.getEstaDisponible());
+	}
+	
+	
+	
+	
+	
 
 }
