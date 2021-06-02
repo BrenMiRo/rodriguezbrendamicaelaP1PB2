@@ -52,7 +52,16 @@ public class BibliotecaTest {
 	}
 	
 	
-	
+	@Test
+	public void UnLibroPuedeSerPrestadoACualquierAlumno() {
+		LibroHistoria libroH = new LibroHistoria(123, "sgfdg", "sdf");
+		Alumno alumno1 = new Alumno(123,"sdfd","dfgdf");
+		Prestamo prestamo1 = new Prestamo(123,alumno1,libroH);
+		
+		prestamo1.getAlumno();
+		
+		Assert.assertEquals(alumno1, prestamo1.getAlumno());
+	}
 	
 	
 	
