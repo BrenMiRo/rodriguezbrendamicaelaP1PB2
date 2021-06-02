@@ -2,9 +2,10 @@ package rodriguezbrendamicaelaP1PB2;
 
 import static org.junit.Assert.*;
 
+import org.junit.Assert;
 import org.junit.Test;
 
-import junit.framework.Assert;
+
 
 public class BibliotecaTest {
 
@@ -15,6 +16,16 @@ public class BibliotecaTest {
 		String impresion = libroG.imprimir();
 				
 		Assert.assertEquals("Se esta imprimiendo libro de geografia", impresion);
+		
+	}
+	
+	@Test
+	public void DadoUnLibroDeHistoriaPuedeImprimir() {
+		LibroHistoria libroH = new LibroHistoria(123, "sgfdg", "sdf");
+		
+		String impresion = libroH.imprimir();
+				
+		Assert.assertEquals("Se esta imprimiendo libro de historia", impresion);
 		
 	}
 	
@@ -39,6 +50,9 @@ public class BibliotecaTest {
 		
 		Assert.assertEquals(Boolean.TRUE, libroH.getEstaDisponible());
 	}
+	
+	
+	
 	
 	
 	

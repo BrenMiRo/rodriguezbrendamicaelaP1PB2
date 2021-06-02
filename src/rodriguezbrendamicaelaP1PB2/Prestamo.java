@@ -17,6 +17,12 @@ public class Prestamo {
 		
 	}
 
+	public Alumno getAlumno() {
+		return alumno;
+	}
+
+	
+
 	
 	
 	
